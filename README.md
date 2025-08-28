@@ -1,11 +1,11 @@
 # Cara Hosting File HTML di GitHub Pages  
-Panduan berisi proses melakukan fork repository yang berisi file HTML, lalu meng-hostingnya menggunakan GitHub Pages.  
+Panduan berisi proses melakukan fork repository yang berisi file HTML, lalu meng-hostingnya menggunakan GitHub Pages (Free).  
 
 ## Persyaratan:  
-- Akun GitHub. Jika belum punya, [daftar](https://github.com/join)  gratis.  
+- Buat akun GitHub. Jika belum punya, [daftar](https://github.com/join)  gratis.  
 
 ## Langkah-langkah:  
-### 1. Fork Repositori  
+### 1. Fork Repositori ini
 - Buka repositori yang ingin di-fork di GitHub.  
 - Klik tombol 'Fork' di pojok kanan atas halaman. Ini akan membuat salinan repositori di akun GitHub Anda.  
 
@@ -15,7 +15,7 @@ Panduan berisi proses melakukan fork repository yang berisi file HTML, lalu meng
 - Scroll ke bawah ke bagian 'Pages'.  
 - Di bagian 'Branch', pilih cabang (branch) yang ingin Anda gunakan untuk GitHub Pages (ubah `None` menjadi `main`).  
 - Klik 'Save'.  
-- Tunggu beberapa menit hingga halaman Anda berhasil diterbitkan.  
+- Tunggu beberapa menit hingga halaman Anda berhasil di-publish.  
 
 ### 3. Mengakses File HTML yang Dihosting  
 - Segarkan halaman dan Anda akan menemukan tautan ke halaman yang dihosting di bagian atas.  
@@ -29,5 +29,7 @@ Panduan berisi proses melakukan fork repository yang berisi file HTML, lalu meng
 - Dalam beberapa menit, perubahan akan terlihat di situs web.  
 
 ### Kesimpulan  
-Selesai! Anda telah berhasil melakukan fork repositori dan menghosting file HTML menggunakan GitHub Pages tanpa perlu meng-clone secara lokal. Enjoy your Github Page!  
+Selesai! Anda telah berhasil melakukan fork repositori dan menghosting file HTML menggunakan GitHub Pages tanpa perlu meng-clone secara lokal. 
+
+Enjoy your Github Page!  
 

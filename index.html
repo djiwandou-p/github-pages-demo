@@ -195,6 +195,104 @@
             transition: all 0.3s ease;
         }
 
+        /* Projects Section */
+        .projects {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .projects h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+        .project-card {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            min-height: 180px;
+            background: #e5e7eb;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+            background-size: cover;
+            background-position: center;
+        }
+        .project-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.0) 40%, rgba(0,0,0,0.45));
+            transition: opacity 0.25s ease;
+            opacity: 0.15;
+        }
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            color: white;
+            background: rgba(0,0,0,0.35);
+            opacity: 0;
+            transition: opacity 0.25s ease;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-title {
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        .project-desc {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            max-width: 28ch;
+            margin-bottom: 0.75rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.6rem 1rem;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+        .btn-outline-light {
+            color: white;
+            border: 2px solid rgba(255,255,255,0.9);
+            background: transparent;
+        }
+        .btn-outline-light:hover { opacity: 0.85; transform: translateY(-1px); }
+
+        .projects-cta {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+        .btn-cta {
+            background: var(--primary-blue);
+            color: white;
+            border: none;
+        }
+        .btn-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+
+        /* Projects responsive grid */
+        @media (min-width: 640px) {
+            .projects-grid { grid-template-columns: repeat(2, 1fr); }
+            .project-card { min-height: 200px; }
+        }
+        @media (min-width: 1024px) {
+            .projects-grid { grid-template-columns: repeat(3, 1fr); }
+            .project-card { min-height: 220px; }
+            .projects h2 { font-size: 1.75rem; }
+        }
+
         /* Responsive enhancements */
         @media (min-width: 480px) {
             h1 {
@@ -261,6 +359,57 @@
         </div>
         <p class="about-description">Hello! I am Dji, a passionate Software Engineer with experience in building web applications, mobile apps, leading some engineering teams and collaborating on innovative projects. Welcome to my portfolio where you can explore my projects and experiences.</p>
     </main>
+    
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <article class="project-card" style="background-image: url('https://mattfarley.ca/img/projects/wfdesignbuild.png');">
+                <div class="project-overlay">
+                    <div class="project-title">WF Design + Build</div>
+                    <div class="project-desc">Brand and web presence for a construction and design company.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+            <article class="project-card" style="background-image: url('https://mattfarley.ca/img/projects/burkettandco.png');">
+                <div class="project-overlay">
+                    <div class="project-title">Burkett & Co</div>
+                    <div class="project-desc">A modern website for a professional accounting firm.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+            <article class="project-card" style="background-image: url('https://mattfarley.ca/img/projects/chronicled.png');">
+                <div class="project-overlay">
+                    <div class="project-title">Chronicled</div>
+                    <div class="project-desc">Enterprise blockchain solutions for supply chain transparency.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-overlay">
+                    <div class="project-title">Project Four</div>
+                    <div class="project-desc">Description coming soon.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-overlay">
+                    <div class="project-title">Project Five</div>
+                    <div class="project-desc">Description coming soon.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-overlay">
+                    <div class="project-title">Project Six</div>
+                    <div class="project-desc">Description coming soon.</div>
+                    <a href="#" class="btn btn-outline-light">View Detail</a>
+                </div>
+            </article>
+        </div>
+        <div class="projects-cta">
+            <a class="btn btn-cta" href="https://github.com/djiwandou-p/" target="_blank" rel="noopener noreferrer">See more on Github</a>
+        </div>
+    </section>
     <footer>
         &copy; 2025 My Portfolio
     </footer>

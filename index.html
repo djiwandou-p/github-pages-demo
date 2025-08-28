@@ -293,6 +293,65 @@
             .projects h2 { font-size: 1.75rem; }
         }
 
+        /* Experiences Section */
+        .experiences {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .experiences h2 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+        .exp-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+        .exp-card {
+            text-align: center;
+            padding: 1.5rem 1rem;
+        }
+        .exp-icon {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: #34d399;
+            margin: 0 auto 1rem auto;
+            display: grid;
+            place-items: center;
+            font-size: 28px;
+            color: #0f172a;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+        }
+        .exp-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin: 0.25rem 0 0.75rem 0;
+        }
+        .exp-lead {
+            max-width: 42ch;
+            margin: 0 auto 1.25rem auto;
+            line-height: 1.6;
+        }
+        .exp-subtitle {
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 1.25rem 0 0.5rem 0;
+        }
+        .exp-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .exp-list li { margin: 0.3rem 0; }
+
+        @media (min-width: 1024px) {
+            .experiences h2 { font-size: 1.75rem; }
+            .exp-grid { grid-template-columns: repeat(3, 1fr); }
+        }
+
         /* Responsive enhancements */
         @media (min-width: 480px) {
             h1 {
@@ -408,6 +467,58 @@
         </div>
         <div class="projects-cta">
             <a class="btn btn-cta" href="https://github.com/djiwandou-p/" target="_blank" rel="noopener noreferrer">See more on Github</a>
+        </div>
+    </section>
+    
+    <section class="experiences" id="experiences">
+        <h2>Experiences</h2>
+        <div class="exp-grid">
+            <div class="exp-card">
+                <div class="exp-icon">➕</div>
+                <div class="exp-title">Software Engineer/Maker</div>
+                <p class="exp-lead">I value simple & usable systems, clean design patterns, and thoughtful interactions.</p>
+                <div class="exp-subtitle">Things I enjoy designing:</div>
+                <ul class="exp-list">
+                    <li>System Architecture, Web, Apps, IoT</li>
+                </ul>
+                <div class="exp-subtitle">Design Tools:</div>
+                <ul class="exp-list">
+                    <li>DB Diagram</li>
+                    <li>Swagger</li>
+                    <li>Pen & Paper</li>
+                </ul>
+            </div>
+            <div class="exp-card">
+                <div class="exp-icon">▣</div>
+                <div class="exp-title">Engineering Manager/Leader</div>
+                <p class="exp-lead">I like to build from first principles and bring ideas to life with teams.</p>
+                <div class="exp-subtitle">Languages I speak:</div>
+                <ul class="exp-list">
+                    <li>HTML, CSS, JS/TS</li>
+                    <li>Node, Go, Python</li>
+                </ul>
+                <div class="exp-subtitle">Dev Tools:</div>
+                <ul class="exp-list">
+                    <li>Next.js, Vite</li>
+                    <li>Docker, CI/CD, AWS, Azure, Alibaba Cloud, Digital Ocean</li>
+                    <li>Bootstrap, Tailwind</li>
+                </ul>
+            </div>
+            <div class="exp-card">
+                <div class="exp-icon">📘</div>
+                <div class="exp-title">Mentor</div>
+                <p class="exp-lead">I genuinely care about people and enjoy helping them work on their craft.</p>
+                <div class="exp-subtitle">Experiences I draw from:</div>
+                <ul class="exp-list">
+                    <li>Software Engineering, Engineering Leadership, Freelancing</li>
+                </ul>
+                <div class="exp-subtitle">Mentor Stats:</div>
+                <ul class="exp-list">
+                    <li>9+ years experience</li>
+                    <li>250+ students</li>
+                    <li>2,500+ mentor sessions</li>
+                </ul>
+            </div>
         </div>
     </section>
     <footer>

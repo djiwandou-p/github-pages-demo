@@ -33,14 +33,14 @@
         
         /* Color Scheme Toggle */
         .color-scheme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
+            position: relative;
             background: rgba(255, 255, 255, 0.9);
             padding: 10px;
             border-radius: 25px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 1rem auto;
+            max-width: 300px;
         }
         
         .color-scheme-toggle button {
@@ -152,6 +152,7 @@
             max-width: 960px;
             margin: 2rem auto;
             padding: 0 1rem;
+            text-align: center;
         }
         
         h1 {
@@ -159,12 +160,23 @@
             margin-bottom: 0.2rem;
         }
         
+        .about-description {
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        
+        .avatar-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        
         img {
-            float: right;
-            margin: 0 0 1rem 1rem;
+            display: block;
+            margin: 0 auto;
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
@@ -185,12 +197,6 @@
     </style>
 </head>
 <body class="scheme-dark">
-    <div class="color-scheme-toggle">
-        <button class="scheme-dark" onclick="changeColorScheme('scheme-dark')">Dark</button>
-        <button class="scheme-blue" onclick="changeColorScheme('scheme-blue')">Blue</button>
-        <button class="scheme-earth" onclick="changeColorScheme('scheme-earth')">Earth</button>
-    </div>
-    
     <header>
         <div><strong>My Portfolio</strong></div>
         <nav>
@@ -203,12 +209,20 @@
     </header>
     <main>
         <h1>About Me</h1>
-        <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="My photo" />
-        <p>Hello! I am Dji, a passionate Software Engineer with experience in building web applications, mobile apps, leading some engineering teams and collaborating on innovative projects. Welcome to my portfolio where you can explore my projects and experiences.</p>
+        <div class="avatar-container">
+            <img src="https://mattfarley.ca/img/mf-avatar.svg" alt="My photo" />
+        </div>
+        <p class="about-description">Hello! I am Dji, a passionate Software Engineer with experience in building web applications, mobile apps, leading some engineering teams and collaborating on innovative projects. Welcome to my portfolio where you can explore my projects and experiences.</p>
     </main>
     <footer>
         &copy; 2025 My Portfolio
     </footer>
+    
+    <div class="color-scheme-toggle">
+        <button class="scheme-dark" onclick="changeColorScheme('scheme-dark')">Dark</button>
+        <button class="scheme-blue" onclick="changeColorScheme('scheme-blue')">Blue</button>
+        <button class="scheme-earth" onclick="changeColorScheme('scheme-earth')">Earth</button>
+    </div>
     
     <script>
         function changeColorScheme(scheme) {
